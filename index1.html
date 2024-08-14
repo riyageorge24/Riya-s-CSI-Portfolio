@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Sara George - Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <!-- Link to PDF Resume on Google Drive -->
+        <a href="https://drive.google.com/file/d/1hSj9CKzIeVMosm86I9toEhNMPyGwdaQj/view?usp=sharing" class="resume-link" target="_blank">My Resume</a>
+    </header>
+    
+    <section class="intro">
+        <div class="intro-left">
+            <img src="mypicture.jpg" alt="Riya George">
+        </div>
+        <div class="intro-right">
+            <p class="intro-text">Hello, I am Riya George!<br>
+            <span>I present this portfolio website, designed and developed by myself.</span></p>
+        </div>
+    </section>
+
+    <section class="group-picture">
+        <div class="overlay">
+            <h2 class="group-title">A LITTLE BEHIND THE SCENES</h2>
+            <p class="group-subtitle">Tids and bits from my internship, projects I have worked on and all the fun stuff I’ve learnt ↓</p>
+        </div>
+    </section>
+
+    <section class="Internship-montage">
+        <h2>Internship Montage</h2>
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+                <img src="pm1.jpg" alt="Project 1" class="carousel-image">
+                <img src="pm2.jpg" alt="Project 2" class="carousel-image">
+                <img src="pm3.jpg" alt="Project 3" class="carousel-image">
+                <img src="pm4.jpg" alt="Project 4" class="carousel-image">
+                <img src="pm5.jpg" alt="Project 5" class="carousel-image">
+                <img src="pm6.jpg" alt="Project 6" class="carousel-image">
+                <img src="pm7.jpg" alt="Project 7" class="carousel-image">
+                <img src="pm8.jpg" alt="Project 8" class="carousel-image">
+                <img src="pm9.jpg" alt="Project 9" class="carousel-image">
+            </div>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+<!-- Project 1: Normal Layout -->
+<div class="project-details">
+    <div class="project-details-left slide-in-left">
+        <h2>Project 1: Anti-Bow Cassette Stand</h2>
+        <p><strong>Mill:</strong> Galv 2</p>
+        <p><strong>Mentor:</strong> Justin Speer</p>
+        <p><strong>Description:</strong> Designed a stand for the Anti-Bow Cassettes, enhancing safety and operational efficiency. Performed NASTRAN analysis to validate load-bearing capacity and strategically utilized existing inventory for material selection.</p>
+    </div>
+    <div class="project-details-right slide-in-right">
+        <img src="Project1.jpg" alt="Project 1 Image">
+    </div>
+</div>
+
+<!-- Project 2: Reversed Layout -->
+<div class="project-details project-details-reverse">
+    <div class="project-details-left slide-in-left">
+        <h2>Project 2: Furnace Structural Repair</h2>
+        <p><strong>Mill:</strong> HSF</p>
+        <p><strong>Mentor:</strong> Curtis Coombs</p>
+        <p><strong>Description:</strong> Assessed the structural integrity of the furnace wall, calculated and simulated counterweight requirements, lifting distance from counterweight, and sourcing counterweights. Collaborated with riggers to prepare for and execute the installation of a 60 ft I-beam.</p>
+    </div>
+    <div class="project-details-right slide-in-right">
+        <img src="Project2.jpg" alt="Project 2 Image">
+    </div>
+</div>
+
+<!-- Project 3: Normal Layout -->
+<div class="project-details">
+    <div class="project-details-left slide-in-left">
+        <h2>Project 3: FEA Analysis Crane Hook</h2>
+        <p><strong>Mill:</strong> Galv 2</p>
+        <p><strong>Mentor:</strong> Justin Speer</p>
+        <p><strong>Description:</strong> Modeled and conducted NASTRAN on a crane hook to evaluate its structural capacity and ensure it can safely handle a specified load of 6000 pounds.</p>
+    </div>
+    <div class="project-details-right slide-in-right">
+        <img src="Project3.jpg" alt="Project 3 Image">
+    </div>
+</div>
+
+<!-- Project 4: Reversed Layout -->
+<div class="project-details project-details-reverse">
+    <div class="project-details-left">
+        <h2>Project 4: Remodeling Lifting Beam</h2>
+        <p><strong>Mill:</strong> HSF</p>
+        <p><strong>Mentor:</strong> Justin Speer, Curtis Coombs & Pedro</p>
+        <p><strong>Description:</strong> Modeled a lifting beam, including ultrasonic testing and NASTRAN analysis, to validate structural integrity.</p>
+    </div>
+    <div class="project-details-right">
+        <img src="Project4.jpg" alt="Project 4 Image">
+    </div>
+</div>
+
+<!-- Project 5: Normal Layout -->
+<div class="project-details">
+    <div class="project-details-left">
+        <h2>Project 5: Floor Repair Work</h2>
+        <p><strong>Mill:</strong> HSF</p>
+        <p><strong>Mentor:</strong> Curtis Coombs</p>
+        <p><strong>Description:</strong> Executed repairs on the mill floor, focusing on restoring structural stability and ensuring safe working conditions.</p>
+    </div>
+    <div class="project-details-right">
+        <img src="Project5.jpg" alt="Project 5 Image">
+    </div>
+</div>
+
+<!-- Project 6: Reversed Layout -->
+<div class="project-details project-details-reverse">
+    <div class="project-details-left">
+        <h2>Project 6: Debander Robot Stairway and Platform</h2>
+        <p><strong>Mill:</strong> HSF</p>
+        <p><strong>Mentor:</strong> Curtis Coombs</p>
+        <p><strong>Description:</strong> Designed a plan view for a new staircase and platform for the Debander Robot, including structural calculations and compliance with relevant codes.</p>
+    </div>
+    <div class="project-details-right">
+        <img src="Project6.jpg" alt="Project 6 Image">
+    </div>
+</div>
+
+<!-- Example for Normal Layout (Text on Left, Image on Right) -->
+<section class="project-details project-details-normal">
+    <div class="project-details-left">
+        <h2>Project 7 Baffle Sensor Cover</h2>
+        <p><strong>Mill:</strong> Galv 2</p>
+        <p><strong>Description:</strong> Modeled a cover for the baffle sensor to protect it from environmental damage and ensure accurate readings during operations.</p>
+        <p><strong>Mentor:</strong> Justin Speer</p>
+    </div>
+    <div class="project-details-right">
+        <img src="project7.jpg" alt="Project 7 Image">
+    </div>
+</section>
+
+<!-- Business Card Section -->
+<div class="business-card">
+    <div class="business-card-content">
+        <h1>Riya Sara George</h1>
+        <h2>Mechanical Engineer Intern</h2>
+        <h3>Stay in Touch!</h3>
+        <p>riyasarageorge@gmail.com</p>
+        <p>213-255-1397</p>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-left">
+            <img src="CSILogo.jpg" alt="CSI Logo">
+        </div>
+        <div class="footer-right">
+            <p>Riya Sara George</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

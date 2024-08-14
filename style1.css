@@ -1,0 +1,373 @@
+/* Existing styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+
+header, footer {
+    background-color: #006325;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.resume-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.footer-left img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.footer-right {
+    margin-right: 20px;
+}
+
+.intro {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.intro-left {
+    flex: 1;
+    position: relative;
+}
+
+.intro-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.intro-right {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    font-size: 27px;
+    animation: slide-in 2s forwards;
+}
+
+.intro-text span {
+    display: block;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.group-picture {
+    position: relative;
+    height: 100vh;
+    background: url('interngroup.jpg') no-repeat center center/cover;
+}
+
+.group-picture .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.group-title {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.group-subtitle {
+    font-size: 25px;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Basic Reset and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    min-height: 100vh; /* Ensure body covers at least the viewport height */
+}
+
+/* Carousel Container Styling */
+.carousel {
+    position: relative;
+    width: 80%; /* Adjust width to fit your design */
+    max-width: 800px; /* Maximum width of the carousel */
+    height: 60vh; /* Increase height to 60% of the viewport height */
+    margin: 0 auto; /* Center the carousel horizontally */
+    overflow: hidden; /* Hide overflow to avoid scrolling */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+/* Flex Container for Carousel Images */
+.carousel-images {
+    display: flex;
+    width: 100%; /* Fit the width of the carousel */
+    height: 100%; /* Fit the height of the carousel */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Image Styling */
+.carousel-image {
+    min-width: 100%; /* Ensure images cover the entire width of the carousel container */
+    height: auto; /* Allow height to adjust based on the image aspect ratio */
+    max-height: 100%; /* Ensure images do not exceed the height of the container */
+    object-fit: contain; /* Adjust to 'contain' to fit images without distortion */
+}
+
+/* Navigation Button Styling */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 24px;
+}
+
+/* Left Navigation Button */
+.carousel-button.prev {
+    left: 0;
+}
+
+/* Right Navigation Button */
+.carousel-button.next {
+    right: 0;
+}
+
+/* Add Padding to Bottom of the Page */
+body {
+    padding-bottom: 100px; /* Add padding to the bottom for extra space */
+}
+
+/* General Styling for the Project Details section */
+.project-details {
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    height: 100vh; /* Full screen height */
+    box-sizing: border-box;
+}
+
+/* Styling for Project Details with Text on Left and Image on Right */
+.project-details-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.project-details-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.project-details-right img {
+    max-width: 60%; /* Resize image to 40% smaller */
+    height: auto;
+    border: 2px solid #ccc; /* Optional border */
+}
+/* Styling for Normal Layout (Text on Left, Image on Right) */
+.project-details-normal {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+.project-details-normal .project-details-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* Apply slide-in animation */
+    animation: slide-in-left 1s forwards;
+}
+
+.project-details-normal .project-details-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.project-details-normal .project-details-right img {
+    max-width: 60%; /* Resize image to 40% smaller */
+    height: auto;
+    border: 2px solid #ccc; /* Optional border */
+}
+
+/* Styling for Project Details with Text on Right and Image on Left */
+.project-details-reverse {
+    flex-direction: row-reverse; /* Switch image and text positions */
+}
+
+.project-details-reverse .project-details-left {
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.project-details-reverse .project-details-right {
+    padding-left: 0; /* Remove extra padding */
+    padding-right: 20px; /* Add padding on the right for image alignment */
+}
+
+.project-details-reverse .project-details-right img {
+    max-width: 60%; /* Resize image to 40% smaller */
+    height: auto;
+    border: 2px solid #ccc; /* Optional border */
+}
+
+/* Add the color for the titles */
+.project-details-left h2, 
+.project-details-left p strong,
+.project-details-right h2, 
+.project-details-right p strong {
+    color: #006325; /* Title color */
+}
+
+.project-details-left p,
+.project-details-right p {
+    font-size: 28px; /* Size of the project description text */
+    margin: 10px 0;
+}
+
+/* Additional styling to ensure consistency */
+.project-details-left p strong {
+    color: #006325; /* Color for "Mill", "Mentor", and "Description" labels */
+}
+
+/* Keyframes for Slide-In Animation */
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Business Card Section */
+.business-card {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-image: url('business-card-image.jpg'); /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White text color for contrast */
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+/* Content within the Business Card Section */
+.business-card-content h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.business-card-content h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.business-card-content h3 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.business-card-content p {
+    font-size: 30px;
+    margin: 5px 0;
+}
